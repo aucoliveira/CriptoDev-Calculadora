@@ -1,3 +1,5 @@
+
+
 function insert(numb) {
    var num = document.getElementById('resultado').innerHTML;
    document.getElementById('resultado').innerHTML = num + numb;
@@ -17,6 +19,8 @@ function calcular() {
     var resultado = document.getElementById('resultado').innerHTML;
     if (resultado) {
         document.getElementById('resultado').innerHTML = eval(resultado);
+        alert(resultado + "=" + eval(resultado));
+        
     } else {
         document.getElementById('resultado').innerHTML= "0";
     }
